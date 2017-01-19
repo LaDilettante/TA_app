@@ -10,7 +10,7 @@ module ApplicationHelper
   end
 
   def site_title
-    "POLSCI 630"
+    "POLSCI 733"
   end
 
   def parse_time_with_correct_zone(input_string)
