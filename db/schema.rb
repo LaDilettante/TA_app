@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160123015152) do
+ActiveRecord::Schema.define(version: 20170124015009) do
 
   create_table "assignments", force: true do |t|
     t.text     "title"
@@ -94,7 +94,7 @@ ActiveRecord::Schema.define(version: 20160123015152) do
     t.string   "hashed_token"
     t.string   "password_reset_token"
     t.datetime "password_reset_sent_at"
-    t.boolean  "is_active"
+    t.boolean  "is_active",              default: true
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
